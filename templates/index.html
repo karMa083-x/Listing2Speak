@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Stan's Ecommerce Reviewer</title>
+    <link rel='stylesheet' href="{{ url_for('static',filename='css/index.css') }}">
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="title">Welcome to Stan's Product Reviewer</h1>
+      <form id="inp" method="post" action="/Ecommerce">
+        
+        <input type="text" id="url" name="url" placeholder="enter URL here">
+        <select name="type" id="type">
+          <option value="N/A">Product Category</option>
+          <option value="1">Amazon Devices &amp; Accessories</option>
+          <option value="2">Amazon Launchpad</option>
+          <option value="3">Appliances</option>
+          <option value="4">Arts, Crafts &amp; Sewing</option>
+          <option value="5">Baby</option>
+          <option value="6">Beauty &amp; Personal Care</option>
+          <option value="7">Camera &amp; Photo Products</option>
+          <option value="8">CD &amp; Vinyl</option>
+          <option value="9">Cell Phones &amp; Accessories</option>
+          <option value="10">Clothing, Shoes &amp; Jewelry</option>
+          <option value="11">Collectible Coins</option>
+          <option value="12">Computers &amp; Accessories</option>
+          <option value="13">Electronics</option>
+          <option value="14">CEntertainment Collectibles</option>
+          <option value="15">Grocery &amp; Gourmet Food</option>
+          <option value="16">Handmake Products</option>
+          <option value="17">Health &amp; Household</option>
+          <option value="18">Home &amp; Kitchen</option>
+          <option value="19">Industrial &amp; Scientific</option>
+          <option value="20">Kitchen &amp; Dining</option>
+          <option value="21">Magazine Subcriptions</option>
+          <option value="22">Movies &amp; TV</option>
+          <option value="23">Musical Instruments</option>
+          <option value="24">Office Products</option>
+          <option value="25">Patio, Lawn &amp; Garden</option>
+          <option value="26">Pet Supplies</option>
+          <option value="27">Software</option>
+          <option value="28">Sports &amp; Outdoors</option>
+          <option value="29">Sports Collectibles</option>
+          <option value="30">Tools &amp; Home Improvement</option>
+          <option value="31">Toys &amp; Games</option>
+          <option value="32">Video Games</option>
+
+
+          
+        </select>
+        <input type="submit" id='b' value="GO">
+      </form>
+      <div id="productAnalysis">
+        <div id="data">
+          <p>this item has {{data[0]}} image</p>
+          <p>this item has {{data[1]}} videos</p>
+          <p>this item has {{data[2]}} description words</p>
+          <p>this item's description has {{data[3]}} keywords</p>
+        </div>
+        <div id="AiData">
+          <p>{{data[4][0]}}</p>
+          <p> your item is in the top {{data[4][1]}} of sellers</p>
+        </div>
+      </div>
+    </div>
+  
+</body></html>

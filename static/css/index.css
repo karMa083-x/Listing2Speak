@@ -1,0 +1,68 @@
+
+p {
+    margin:5px;
+    border: 2px solid powderblue;
+    padding: 0px;
+  }
+  body {
+      background-image:url('C:\Users\xuzih\OneDrive\桌面\Amazon-Innovation-1.png');
+  }
+  #b{
+    background-color: lightblue;
+    border: 5px;
+    border-radius: 5px;
+    border-color:lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .title{
+    font-family: kduster, fantasy;
+    text-align:center;
+  }
+  #inp{
+    font-style: oblique;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  #url{
+    background-color: lightcoral;
+    font-size:20px;
+    text-align:center;
+    border-radius:15px;
+    font-family: Chalkduster, fantasy;
+  }
+  #type{
+     background-color: lightcoral;
+    font-size:20px;
+    text-align:center;
+    border-radius:15px;
+    font-family: Chalkduster, fantasy;
+  }
+  #app{
+    width:85%;
+    height:75%;
+    background-color:bisque;
+    margin:auto;
+    border-radius:10px;
+  }
+  #productAnalysis{
+    width:80%;
+    display:flex;
+    margin:0 auto;
+  }
+  #data{
+    margin:0 auto;
+    width:50%;
+  }
+  #AiData{
+    width:100%;
+    font-size:25px;
+    font-weight: 800;
+    border: 2px solid red;
+    margin:15 auto;
+  }
+  
+  
+  #data p{
+    margin:15
+  }
